@@ -3,10 +3,7 @@ body {
     padding: 0;
     background: #FFF;
     overflow-x: hidden;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
 }
-
 body, a{
     font-family: "helvetica";
     font-weight: 400;
@@ -14,6 +11,7 @@ body, a{
 }
 
 /*font */
+
 @font-face {
     font-family: 'Goudy Bookletter 1911';
     src: url('./fonts/GoudyBookletter1911.woff2') format('woff2'),
@@ -31,6 +29,7 @@ body, a{
     font-style: normal;
 
 }
+
 /*end font */
 
 a,
@@ -67,17 +66,14 @@ a:focus {
     clear: both;
     background: 50% 50% no-repeat;
     padding: 0 50px;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
     position: relative;
 }
-/*
+
 .bloc .container {
-    padding-left: 5px;
-    padding-right: 5px;
-}*/
+    padding-left: 10px;
+    padding-right: 10px;
+}
 
 .bloc-lg {
     padding: 100px 50px;
@@ -88,7 +84,7 @@ a:focus {
 }
 
 .bloc-sm {
-    padding: 20px 50px;
+    padding: 28px 50px;
 }
 
 .bg-center,
@@ -101,9 +97,6 @@ a:focus {
 .bg-tr-edge,
 .bg-br-edge,
 .bg-repeat {
-    -webkit-background-size: auto!important;
-    -moz-background-size: auto!important;
-    -o-background-size: auto!important;
     background-size: auto!important;
 }
 
@@ -182,10 +175,14 @@ a:focus {
 }
 
 .header {
-    display: block;
+    width: 100%;
+    display: flex;
+    justify-items: center;
+    align-content: center;
 }
 
 .navbar {
+    width: 100%;
     margin-bottom: 0;
     z-index: 1;
 }
@@ -197,41 +194,34 @@ a:focus {
 
 .navbar-brand {
     height: auto;
-    padding: 3px 3px;
+    padding: 3px 6px;
     font-size: 25px;
     font-weight: normal;
     font-weight: 600;
     line-height: 44px;
+    margin-left: 5px;
+}
+
+.navbar-brand img {
+    margin: 0 5px 0 0;
+    display: inline;
 }
 
 .navbar-brand img[src$=svg] {
     min-width: 100px;
 }
 
-.navbar-brand img {
-   max-height: 40px;
-   width: auto;
-   height: 40px;
-   margin: 0 5px 0 0;
-    display: inline;
-    margin-left: 10px;
+.center .navbar-brand img {
+    margin: 0;
 }
-a.navbar-brand {
-    display: flex;
-}
-.navbar-header p {
-    font-size: 25px;
-    font-family: "Goudy Bookletter 1911";
-    padding: 0px !important;
-    color: black !important;
-}
-/*.navbar .nav {
+
+.navbar .nav {
     padding-top: 2px;
     margin-right: -16px;
     float: right;
     z-index: 1;
 }
-*/
+
 .nav > li {
     float: left;
     margin-top: 4px;
@@ -260,6 +250,17 @@ a.navbar-brand {
     background-color: rgba(0, 0, 0, .5);
     width: 26px;
 }
+
+.nav-invert .navbar .nav {
+    display:flex;
+}
+
+.navbar-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
 .nav-invert .navbar-header .navbar-brand {
     width: 100%;
     z-index: 2;
@@ -273,7 +274,6 @@ a {
         top: 50%;
         right: 20px;
         transform: translate(0, -50%);
-        -webkit-transform: translateY(-50%);
     }
     .nav > li .dropdown-menu a,
     .nav > li .dropdown-menu a:hover a:focus {
@@ -289,13 +289,7 @@ a {
     .nav-center .navbar-header {
         width: 100%;
     }
-    .navbar-header p {
-    font-size: 18px;
-    ont-size: 25px;
-    font-family: 'Viaoda Libre',cursive;
-    padding: 0px !important;
-    color: black !important;
-}
+
     .navbar-logo {
         display:flex;
         align-content: center;
@@ -391,6 +385,7 @@ button:focus
 .btn-rd {
     border-radius: 40px;
 }
+
 .btn-clean {
     border: 1px solid rgba(0, 0, 0, .08);
     border-bottom-color: rgba(0, 0, 0, .1);
@@ -475,12 +470,10 @@ a[data-lightbox]:hover::before {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
 }
 
 a[data-lightbox]:hover img {
     opacity: 0.6;
-    -webkit-animation-fill-mode: none;
     animation-fill-mode: none;
 }
 
@@ -606,7 +599,6 @@ p {
     padding: 12px 28px 12px 28px;
     font-size: 16px;
     font-weight: 700;
-    background: #bd6034;
 }
 
 .social {
@@ -650,9 +642,8 @@ h4 {
     margin-top: 24px;
 }
 
-
 .white {
-    color: #F3976C;
+    color: #ffffff;
 }
 
 .portfolio-thumb {
@@ -674,7 +665,7 @@ h4 {
 }
 
 .bold-link {
-    font-weight: 400;
+    font-weight: 900;
     text-decoration: underline!important;
 }
 
@@ -683,7 +674,7 @@ h4 {
 }
 
 .bgc-white {
-    background-color: #FFF;
+    background-color: #FFFFFF;
 }
 
 .bgc-dark-slate-blue {
@@ -695,10 +686,16 @@ h4 {
 }
 
 .tc-white {
-    color: #F3976C;
+    color: #FFFFFF;
 }
-.cta-hero:hover {
-    background: #c27956;
+
+.btn-atomic-tangerine {
+    background: #bd6034;
+    color: #FFFFFF!important;
+}
+
+.btn-atomic-tangerine:hover {
+    background: #bd6034;
     color: #FFFFFF;
 }
 
@@ -760,7 +757,7 @@ h4 {
     flex-direction: column;
     z-index: 1;
     position: relative;
-    text-align: center;
+
 }
 
 .header-center{
@@ -795,7 +792,6 @@ input:invalid {
 
   .text-contact {
       font-size: 20px;
-      margin-right: 10px;
   }
 
   .text-center-bandeau {
@@ -838,7 +834,7 @@ input:invalid {
     }
 }
 
-@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px){
     .b-parallax {
         background-attachment: scroll;
     }
@@ -868,7 +864,7 @@ input:invalid {
     }
 
     .bloc-lg {
-        padding: 80px 10px;
+        padding: 80px 50px;
     }
 }
 
@@ -892,21 +888,20 @@ input:invalid {
     .b-parallax {
         background-attachment: scroll;
     }
-    /*.navbar .nav {
+    .navbar .nav {
         padding-top: 0;
         border-top: 1px solid rgba(0, 0, 0, .2);
         float: none!important;
-    }*/
+    }
     .navbar.row {
         margin-left: 0;
         margin-right: 0;
     }
-   .site-navigation {
+    .site-navigation {
         position: inherit;
         transform: none;
-        -webkit-transform: none;
-        -ms-transform: none;
-    }
+        
+           }
     .nav > li {
         margin-top: 0;
         border-bottom: 1px solid rgba(0, 0, 0, .1);
@@ -942,7 +937,6 @@ input:invalid {
     .navbar-collapse {
         padding: 0;
         overflow-x: hidden;
-        -webkit-box-shadow: none;
         box-shadow: none;
     }
     .navbar-brand img {
@@ -965,6 +959,7 @@ input:invalid {
     .bloc-xl {
         padding: 40px 0;
     }
+
     .bloc-sm,
     .bloc-md {
         padding-left: 0;
@@ -1036,13 +1031,24 @@ span.fa.icon-md {
 }
 .social-icon.bloc.bloc-sm {
      margin-bottom: 30px;
-    margin-top: 10px;   
+    margin-top: 0px;   
 }
 .intro-chouette-agence {
     display: flex;
     justify-content: space-around;
     margin: 20px;
 }
+.row {
+
+    text-align: center;
+    margin: auto;
+}
+.btn-atomic-tangerine:hover {
+    background: #c27956;
+    color: #FFFFFF;
+}
 a.text-footer {
-    font-weight: normal;
+    font-weight: bold;
+    margin-bottom: 40px;
+    font-size: 14px;
 }
