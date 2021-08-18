@@ -1029,10 +1029,6 @@ input:invalid {
 span.fa.icon-md {
     margin: 15px;
 }
-.social-icon.bloc.bloc-sm {
-     margin-bottom: 30px;
-    margin-top: 0px;   
-}
 .intro-chouette-agence {
     display: flex;
     justify-content: space-around;
@@ -1046,9 +1042,4 @@ span.fa.icon-md {
 .btn-atomic-tangerine:hover {
     background: #c27956;
     color: #FFFFFF;
-}
-a.text-footer {
-    font-weight: bold;
-    margin-bottom: 40px;
-    font-size: 14px;
 }
