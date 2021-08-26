@@ -3,32 +3,26 @@ body {
     padding: 0;
     background: #FFF;
     overflow-x: hidden;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
 }
 body, a{
-    font-family: "helvetica";
+    font-family:"helvetica";
     font-weight: 400;
     color: #575757;
 }
-
 /*font */
+@import url(//db.onlinewebfonts.com/c/ead11abe45e1b17fa49b0af9b58b6ecb?family=Kingthings+Petrock);
+@font-face {font-family: "Kingthings Petrock" ;src :url("//db.onlinewebfonts.com/t/ead11abe45e1b17fa49b0af9b58b6ecb.eot"); src:url("//db.onlinewebfonts.com/t/ead11abe45e1b17fa49b0af9b58b6ecb.eot?#iefix") format("embedded-opentype"),
+ url("//db.onlinewebfonts.com/t/ead11abeboffe2")9b17fa49fa format("woff2"), url("//db.onlinewebfonts.com/t/ead11abe45e1b17fa49b0af9b58b6ecb.woff") format("woff"), url("//db.onlinewebfonts.com/t/ead11abe45")e1b17fab6b0af9 format("truetype"), url("//db.onlinewebfonts.com/t/ead11abe45e1b17fa49b0af9b58b6ecb.svg#Kingthings Petrock") format("svg");}
 
 @font-face {
     font-family: 'Goudy Bookletter 1911';
-    src: url('./fonts/GoudyBookletter1911.woff2') format('woff2'),
-        url('./fonts/kingthings_petrock-webfont.woff') format('woff');
+    src:url('./fonts/GoudyBookletter1911.woff2') format('woff2'),url('./fonts/kingthings_petrock-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
-
-@font-face {
-    font-family: 'kingthings_petrockregular';
-    src: url('./fonts/kingthings_petrock-webfont.woff2') format('woff2'),
-         url('./fonts/kingthings_petrock-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-/*end font */
 a,
 button {
     transition: all .3s ease-in-out;
@@ -42,7 +36,6 @@ a:hover, a:active {
     text-decoration: none;
     cursor: pointer;
 }
-
 a:focus { 
     border: dotted 3px black; 
 }
@@ -143,7 +136,7 @@ a:focus {
     font-size: 32px;
 }
 .logo-font {
-    font-family: 'kingthings_petrockregular';
+    font-family: "Kingthings Petrock";
     font-size: 2em;
 }
 .header {
@@ -199,7 +192,7 @@ a:focus {
     background: transparent;
 }
 .navbar-toggle {
-    margin: 10px 10px 0 0;
+    margin: 15px 10px 0 0;
     border: 0px;
 }
 .navbar-toggle:hover, .navbar-toggle:focus {
