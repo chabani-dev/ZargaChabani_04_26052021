@@ -14,7 +14,7 @@ body, a{
 a,
 button {
     transition: all .3s ease-in-out;
-    outline: none!important;
+    outline: none;
 }
 a:link { 
     text-decoration:none; 
@@ -66,7 +66,7 @@ a:focus {
 .bg-tr-edge,
 .bg-br-edge,
 .bg-repeat {
-    background-size: auto!important;
+    background-size: auto;
 }
 .bg-repeat {
     background: repeat;
