@@ -477,6 +477,7 @@ a[data-lightbox]:hover img {
 }
 p {
     font-size: 14px;
+    font-weight: bold;
 }
 .tight-width-whitespace {
     max-width: 600px;
@@ -870,6 +871,11 @@ span.fa.icon-md {
     margin: auto;
 }
 .btn-atomic-tangerine:hover {
-    background: #c27956;
+    background: #EBAE7F;
     color: #FFFFFF;
+}
+.btn-atomic-tangerine:hover {
+    background: #fcac1b !important;
+    color: #313030 !important;
+    border: solid 2px white;
 }
