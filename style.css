@@ -11,18 +11,6 @@ body, a{
     font-weight: 400;
     color: #575757;
 }
-/*font */
-@import url(//db.onlinewebfonts.com/c/ead11abe45e1b17fa49b0af9b58b6ecb?family=Kingthings+Petrock);
-@font-face {font-family: "Kingthings Petrock" ;src :url("//db.onlinewebfonts.com/t/ead11abe45e1b17fa49b0af9b58b6ecb.eot"); src:url("//db.onlinewebfonts.com/t/ead11abe45e1b17fa49b0af9b58b6ecb.eot?#iefix") format("embedded-opentype"),
- url("//db.onlinewebfonts.com/t/ead11abeboffe2")9b17fa49fa format("woff2"), url("//db.onlinewebfonts.com/t/ead11abe45e1b17fa49b0af9b58b6ecb.woff") format("woff"), url("//db.onlinewebfonts.com/t/ead11abe45")e1b17fab6b0af9 format("truetype"), url("//db.onlinewebfonts.com/t/ead11abe45e1b17fa49b0af9b58b6ecb.svg#Kingthings Petrock") format("svg");}
-
-@font-face {
-    font-family: 'Goudy Bookletter 1911';
-    src:url('./fonts/GoudyBookletter1911.woff2') format('woff2'),url('./fonts/kingthings_petrock-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
 a,
 button {
     transition: all .3s ease-in-out;
@@ -123,10 +111,6 @@ a:focus {
 .voffset-lg {
     margin-top: 80px;
 }
-.row-no-gutters {
-    margin-right: 0;
-    margin-left: 0;
-}
 .row.row-no-gutters > [class^="col-"],
 .row.row-no-gutters > [class*=" col-"] {
     padding-right: 0;
@@ -138,6 +122,7 @@ a:focus {
 .logo-font {
     font-family: "Kingthings Petrock";
     font-size: 2em;
+    border-bottom: white solid 2px;
 }
 .header {
     width: 100%;
@@ -327,7 +312,7 @@ button:focus
 }
 .icon-md {
     font-size: 30px!important;
-    color: #000000;
+    color: #313030;
 }
 .icon-lg {
     font-size: 60px!important;
@@ -361,7 +346,15 @@ button:focus
     right: 20px;
     opacity: 0;
     z-index: 500;
-    transition: all .3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #bd502b;
+    border: solid 2px white;
+}
+.scrollToTop:focus {
+    background-color: #fcac1b;
+}
+.scrollToTop:hover {
+    background-color: #fcac1b;
 }
 .scrollToTop span {
     margin-top: 6px;
@@ -534,7 +527,7 @@ h4 {
     margin-top: 24px;
 }
 .white {
-    color: #ffffff;
+    color: #ffffff!important;
 }
 .portfolio-thumb {
     margin-bottom: 24px;
@@ -558,7 +551,7 @@ h4 {
     outline: none;
 }
 .bgc-white {
-    background-color: #FFFFFF;
+    background-color: #ffffff!important;
 }
 .bgc-dark-slate-blue {
     background-color: #364577;
@@ -567,7 +560,7 @@ h4 {
     background-color: #F3976C;
 }
 .tc-white {
-    color: #FFFFFF;
+    color: #ffffff!important;
 }
 .btn-atomic-tangerine {
     background: #F3976C;
@@ -646,7 +639,7 @@ input:focus:invalid {
     outline: none;
 }
 .blacktext {
-      color: black!important;
+      color: #FFFFFF!important;
 }
 .text-contact {
       font-size: 20px;
@@ -867,7 +860,10 @@ form {
 }
 }
 span.fa.icon-md {
-    margin: 15px;
+    margin: 10px;
+    border: solid 2px transparent;
+    border-radius: 50%;
+    padding: 1rem;
 }
 .row {
     text-align: center;
